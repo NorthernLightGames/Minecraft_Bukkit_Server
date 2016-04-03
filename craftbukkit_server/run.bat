@@ -1,2 +1,2 @@
-java -Xmx1024M -Xms1025M -jar craftbukkit_server.jar nogui
+java -jar bin/craftbukkit_server.jar nogui
 PAUSE
