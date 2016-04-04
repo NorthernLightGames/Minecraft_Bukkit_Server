@@ -1,99 +1,261 @@
-[13:31:06] [Server thread/INFO]: Starting minecraft server version 1.9.2
-[13:31:06] [Server thread/INFO]: Loading properties
-[13:31:06] [Server thread/INFO]: Default game type: SURVIVAL
-[13:31:06] [Server thread/INFO]: Generating keypair
-[13:31:06] [Server thread/INFO]: Starting Minecraft server on *:25565
-[13:31:06] [Server thread/INFO]: Using default channel type
-[13:31:08] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-f01861f (MC: 1.9.2) (Implementing API version 1.9.2-R0.1-SNAPSHOT)
-[13:31:08] [Server thread/WARN]: Failed to load user banlist: 
-java.io.FileNotFoundException: banned-players.json (Det går inte att hitta filen)
-	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_73]
-	at java.io.FileInputStream.open(Unknown Source) ~[?:1.8.0_73]
-	at java.io.FileInputStream.<init>(Unknown Source) ~[?:1.8.0_73]
-	at com.google.common.io.Files.newReader(Files.java:86) ~[craftbukkit_server.jar:git-Bukkit-f01861f]
-	at net.minecraft.server.v1_9_R1.JsonList.load(JsonList.java:171) ~[craftbukkit_server.jar:git-Bukkit-f01861f]
-	at net.minecraft.server.v1_9_R1.DedicatedPlayerList.z(SourceFile:99) [craftbukkit_server.jar:git-Bukkit-f01861f]
-	at net.minecraft.server.v1_9_R1.DedicatedPlayerList.<init>(SourceFile:25) [craftbukkit_server.jar:git-Bukkit-f01861f]
+[18:56:59] [Server thread/INFO]: Starting minecraft server version 1.9.2
+[18:56:59] [Server thread/WARN]: To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+[18:56:59] [Server thread/INFO]: Loading properties
+[18:56:59] [Server thread/INFO]: Default game type: SURVIVAL
+[18:56:59] [Server thread/INFO]: Generating keypair
+[18:56:59] [Server thread/INFO]: Starting Minecraft server on *:25565
+[18:56:59] [Server thread/INFO]: Using default channel type
+[18:56:59] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-f01861f (MC: 1.9.2) (Implementing API version 1.9.2-R0.1-SNAPSHOT)
+[18:57:00] [Server thread/ERROR]: Could not load 'plugins\FirstLogin.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.NoClassDefFoundError: org/bukkit/event/player/PlayerListener
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:133) ~[craftbukkit_server.jar:git-Bukkit-f01861f]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:328) ~[craftbukkit_server.jar:git-Bukkit-f01861f]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:251) [craftbukkit_server.jar:git-Bukkit-f01861f]
+	at org.bukkit.craftbukkit.v1_9_R1.CraftServer.loadPlugins(CraftServer.java:293) [craftbukkit_server.jar:git-Bukkit-f01861f]
+	at org.bukkit.craftbukkit.v1_9_R1.CraftServer.<init>(CraftServer.java:255) [craftbukkit_server.jar:git-Bukkit-f01861f]
+	at net.minecraft.server.v1_9_R1.PlayerList.<init>(PlayerList.java:69) [craftbukkit_server.jar:git-Bukkit-f01861f]
+	at net.minecraft.server.v1_9_R1.DedicatedPlayerList.<init>(SourceFile:14) [craftbukkit_server.jar:git-Bukkit-f01861f]
 	at net.minecraft.server.v1_9_R1.DedicatedServer.init(DedicatedServer.java:182) [craftbukkit_server.jar:git-Bukkit-f01861f]
 	at net.minecraft.server.v1_9_R1.MinecraftServer.run(MinecraftServer.java:506) [craftbukkit_server.jar:git-Bukkit-f01861f]
-	at java.lang.Thread.run(Unknown Source) [?:1.8.0_73]
-[13:31:08] [Server thread/WARN]: Failed to load ip banlist: 
-java.io.FileNotFoundException: banned-ips.json (Det går inte att hitta filen)
-	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_73]
-	at java.io.FileInputStream.open(Unknown Source) ~[?:1.8.0_73]
-	at java.io.FileInputStream.<init>(Unknown Source) ~[?:1.8.0_73]
-	at com.google.common.io.Files.newReader(Files.java:86) ~[craftbukkit_server.jar:git-Bukkit-f01861f]
-	at net.minecraft.server.v1_9_R1.JsonList.load(JsonList.java:171) ~[craftbukkit_server.jar:git-Bukkit-f01861f]
-	at net.minecraft.server.v1_9_R1.DedicatedPlayerList.y(SourceFile:91) [craftbukkit_server.jar:git-Bukkit-f01861f]
-	at net.minecraft.server.v1_9_R1.DedicatedPlayerList.<init>(SourceFile:27) [craftbukkit_server.jar:git-Bukkit-f01861f]
-	at net.minecraft.server.v1_9_R1.DedicatedServer.init(DedicatedServer.java:182) [craftbukkit_server.jar:git-Bukkit-f01861f]
-	at net.minecraft.server.v1_9_R1.MinecraftServer.run(MinecraftServer.java:506) [craftbukkit_server.jar:git-Bukkit-f01861f]
-	at java.lang.Thread.run(Unknown Source) [?:1.8.0_73]
-[13:31:08] [Server thread/WARN]: Failed to load operators list: 
-java.io.FileNotFoundException: ops.json (Det går inte att hitta filen)
-	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_73]
-	at java.io.FileInputStream.open(Unknown Source) ~[?:1.8.0_73]
-	at java.io.FileInputStream.<init>(Unknown Source) ~[?:1.8.0_73]
-	at com.google.common.io.Files.newReader(Files.java:86) ~[craftbukkit_server.jar:git-Bukkit-f01861f]
-	at net.minecraft.server.v1_9_R1.JsonList.load(JsonList.java:171) ~[craftbukkit_server.jar:git-Bukkit-f01861f]
-	at net.minecraft.server.v1_9_R1.DedicatedPlayerList.A(SourceFile:107) [craftbukkit_server.jar:git-Bukkit-f01861f]
-	at net.minecraft.server.v1_9_R1.DedicatedPlayerList.<init>(SourceFile:29) [craftbukkit_server.jar:git-Bukkit-f01861f]
-	at net.minecraft.server.v1_9_R1.DedicatedServer.init(DedicatedServer.java:182) [craftbukkit_server.jar:git-Bukkit-f01861f]
-	at net.minecraft.server.v1_9_R1.MinecraftServer.run(MinecraftServer.java:506) [craftbukkit_server.jar:git-Bukkit-f01861f]
-	at java.lang.Thread.run(Unknown Source) [?:1.8.0_73]
-[13:31:08] [Server thread/WARN]: Failed to load white-list: 
-java.io.FileNotFoundException: whitelist.json (Det går inte att hitta filen)
-	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_73]
-	at java.io.FileInputStream.open(Unknown Source) ~[?:1.8.0_73]
-	at java.io.FileInputStream.<init>(Unknown Source) ~[?:1.8.0_73]
-	at com.google.common.io.Files.newReader(Files.java:86) ~[craftbukkit_server.jar:git-Bukkit-f01861f]
-	at net.minecraft.server.v1_9_R1.JsonList.load(JsonList.java:171) ~[craftbukkit_server.jar:git-Bukkit-f01861f]
-	at net.minecraft.server.v1_9_R1.DedicatedPlayerList.C(SourceFile:123) [craftbukkit_server.jar:git-Bukkit-f01861f]
-	at net.minecraft.server.v1_9_R1.DedicatedPlayerList.<init>(SourceFile:30) [craftbukkit_server.jar:git-Bukkit-f01861f]
-	at net.minecraft.server.v1_9_R1.DedicatedServer.init(DedicatedServer.java:182) [craftbukkit_server.jar:git-Bukkit-f01861f]
-	at net.minecraft.server.v1_9_R1.MinecraftServer.run(MinecraftServer.java:506) [craftbukkit_server.jar:git-Bukkit-f01861f]
-	at java.lang.Thread.run(Unknown Source) [?:1.8.0_73]
-[13:31:08] [Server thread/INFO]: Preparing level "world"
-[13:31:10] [Server thread/INFO]: Preparing start region for level 0 (Seed: -6036878565257615790)
-[13:31:11] [Server thread/INFO]: Preparing spawn area: 3%
-[13:31:12] [Server thread/INFO]: Preparing spawn area: 5%
-[13:31:13] [Server thread/INFO]: Preparing spawn area: 7%
-[13:31:14] [Server thread/INFO]: Preparing spawn area: 10%
-[13:31:15] [Server thread/INFO]: Preparing spawn area: 13%
-[13:31:16] [Server thread/INFO]: Preparing spawn area: 17%
-[13:31:17] [Server thread/INFO]: Preparing spawn area: 21%
-[13:31:18] [Server thread/INFO]: Preparing spawn area: 26%
-[13:31:19] [Server thread/INFO]: Preparing spawn area: 31%
-[13:31:20] [Server thread/INFO]: Preparing spawn area: 36%
-[13:31:21] [Server thread/INFO]: Preparing spawn area: 42%
-[13:31:22] [Server thread/INFO]: Preparing spawn area: 48%
-[13:31:23] [Server thread/INFO]: Preparing spawn area: 54%
-[13:31:24] [Server thread/INFO]: Preparing spawn area: 61%
-[13:31:25] [Server thread/INFO]: Preparing spawn area: 67%
-[13:31:26] [Server thread/INFO]: Preparing spawn area: 73%
-[13:31:27] [Server thread/INFO]: Preparing spawn area: 80%
-[13:31:28] [Server thread/INFO]: Preparing spawn area: 86%
-[13:31:29] [Server thread/INFO]: Preparing spawn area: 91%
-[13:31:30] [Server thread/INFO]: Preparing spawn area: 97%
-[13:31:31] [Server thread/INFO]: Preparing start region for level 1 (Seed: -6036878565257615790)
-[13:31:32] [Server thread/INFO]: Preparing spawn area: 6%
-[13:31:33] [Server thread/INFO]: Preparing spawn area: 9%
-[13:31:34] [Server thread/INFO]: Preparing spawn area: 21%
-[13:31:35] [Server thread/INFO]: Preparing spawn area: 27%
-[13:31:36] [Server thread/INFO]: Preparing spawn area: 38%
-[13:31:37] [Server thread/INFO]: Preparing spawn area: 48%
-[13:31:38] [Server thread/INFO]: Preparing spawn area: 56%
-[13:31:39] [Server thread/INFO]: Preparing spawn area: 64%
-[13:31:40] [Server thread/INFO]: Preparing spawn area: 75%
-[13:31:41] [Server thread/INFO]: Preparing spawn area: 84%
-[13:31:42] [Server thread/INFO]: Preparing spawn area: 89%
-[13:31:43] [Server thread/INFO]: Preparing spawn area: 97%
-[13:31:44] [Server thread/INFO]: Preparing start region for level 2 (Seed: -6036878565257615790)
-[13:31:45] [Server thread/INFO]: Preparing spawn area: 27%
-[13:31:46] [Server thread/INFO]: Preparing spawn area: 50%
-[13:31:47] [Server thread/INFO]: Preparing spawn area: 72%
-[13:31:48] [Server thread/INFO]: Preparing spawn area: 97%
-[13:31:48] [Server thread/INFO]: Done (40,139s)! For help, type "help" or "?"
-[13:31:54] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5789ms behind, skipping 115 tick(s)
-[13:33:12] [User Authenticator #1/INFO]: UUID of player Valdemar_Melin is 2e5f5e39-890d-4115-95b8-2d5cb4f94ada
-[13:33:12] [Server thread/INFO]: Valdemar_Melin[/127.0.0.1:62317] logged in with entity id 2147 at ([world]-17.5, 70.0, 251.5)
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_74]
+Caused by: java.lang.NoClassDefFoundError: org/bukkit/event/player/PlayerListener
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:1.8.0_74]
+	at java.lang.ClassLoader.defineClass(Unknown Source) ~[?:1.8.0_74]
+	at java.security.SecureClassLoader.defineClass(Unknown Source) ~[?:1.8.0_74]
+	at java.net.URLClassLoader.defineClass(Unknown Source) ~[?:1.8.0_74]
+	at java.net.URLClassLoader.access$100(Unknown Source) ~[?:1.8.0_74]
+	at java.net.URLClassLoader$1.run(Unknown Source) ~[?:1.8.0_74]
+	at java.net.URLClassLoader$1.run(Unknown Source) ~[?:1.8.0_74]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_74]
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_74]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:77) ~[craftbukkit_server.jar:git-Bukkit-f01861f]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:62) ~[craftbukkit_server.jar:git-Bukkit-f01861f]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_74]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_74]
+	at me.bush.firstlogin.FirstLogin.<init>(FirstLogin.java:23) ~[?:?]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_74]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_74]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_74]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:1.8.0_74]
+	at java.lang.Class.newInstance(Unknown Source) ~[?:1.8.0_74]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:52) ~[craftbukkit_server.jar:git-Bukkit-f01861f]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:129) ~[craftbukkit_server.jar:git-Bukkit-f01861f]
+	... 9 more
+Caused by: java.lang.ClassNotFoundException: org.bukkit.event.player.PlayerListener
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:67) ~[craftbukkit_server.jar:git-Bukkit-f01861f]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:62) ~[craftbukkit_server.jar:git-Bukkit-f01861f]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_74]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_74]
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:1.8.0_74]
+	at java.lang.ClassLoader.defineClass(Unknown Source) ~[?:1.8.0_74]
+	at java.security.SecureClassLoader.defineClass(Unknown Source) ~[?:1.8.0_74]
+	at java.net.URLClassLoader.defineClass(Unknown Source) ~[?:1.8.0_74]
+	at java.net.URLClassLoader.access$100(Unknown Source) ~[?:1.8.0_74]
+	at java.net.URLClassLoader$1.run(Unknown Source) ~[?:1.8.0_74]
+	at java.net.URLClassLoader$1.run(Unknown Source) ~[?:1.8.0_74]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_74]
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_74]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:77) ~[craftbukkit_server.jar:git-Bukkit-f01861f]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:62) ~[craftbukkit_server.jar:git-Bukkit-f01861f]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_74]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_74]
+	at me.bush.firstlogin.FirstLogin.<init>(FirstLogin.java:23) ~[?:?]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_74]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_74]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_74]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:1.8.0_74]
+	at java.lang.Class.newInstance(Unknown Source) ~[?:1.8.0_74]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:52) ~[craftbukkit_server.jar:git-Bukkit-f01861f]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:129) ~[craftbukkit_server.jar:git-Bukkit-f01861f]
+	... 9 more
+[18:57:00] [Server thread/INFO]: [SetHome] Loading SetHome v1.0.0
+[18:57:00] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1;no_git_id
+[18:57:00] [Server thread/INFO]: [EasyWarp] Loading EasyWarp v3.3
+[18:57:00] [Server thread/INFO]: [SetSpawn] Loading SetSpawn v2.1
+[18:57:00] [Server thread/INFO]: [AdminTool] Loading AdminTool v1.3.7
+[18:57:00] [Server thread/INFO]: [HolographicDisplays] Loading HolographicDisplays v2.1.12
+[18:57:00] [Server thread/INFO]: [Vault] Loading Vault v1.5.6-b49
+[18:57:00] [Server thread/INFO]: [LaggRemover] Loading LaggRemover v0.2.2
+[18:57:00] [Server thread/INFO]: [MassiveCore] Loading MassiveCore v2.8.7Beta
+[18:57:00] [Server thread/INFO]: TimeUnit.MILLIS_PER_MINUTE: 60000
+[18:57:00] [Server thread/INFO]: [WorldGuard] Loading WorldGuard v6.1
+[18:57:00] [Server thread/INFO]: [Factions] Loading Factions v2.8.7Beta
+[18:57:00] [Server thread/INFO]: [ServerSigns] Loading ServerSigns v4.5.1
+[18:57:00] [Server thread/INFO]: [CustomEnchantments] Loading CustomEnchantments v2.4c
+[18:57:00] [Server thread/INFO]: [Vault] Enabling Vault v1.5.6-b49
+[18:57:00] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[18:57:00] [Server thread/INFO]: [Vault] Enabled Version 1.5.6-b49
+[18:57:00] [Server thread/INFO]: [MassiveCore] Enabling MassiveCore v2.8.7Beta
+[18:57:00] [Server thread/INFO]: [MassiveCore 2.8.7Beta] === ENABLE START ===
+[18:57:00] [Server thread/INFO]: [MassiveCore 2.8.7Beta] §eLoading Cachefile datas...
+[18:57:00] [Server thread/INFO]: [MassiveCore 2.8.7Beta] §eLoading Onlineplayer datas...
+[18:57:00] [Server thread/INFO]: [MassiveCore 2.8.7Beta] §eLoading Registry datas...
+[18:57:00] [Server thread/INFO]: [MassiveCore 2.8.7Beta] §eSaving Cachefile...
+[18:57:00] [Server thread/INFO]: [MassiveCore 2.8.7Beta] §eSetup of IdUtil took §d8§ems.
+[18:57:00] [Server thread/INFO]: [MassiveCore 2.8.7Beta] §aActivated Integration §dIntegrationVault
+[18:57:00] [Server thread/INFO]: [MassiveCore 2.8.7Beta] === ENABLE §aCOMPLETE §e(Took §d110ms§e) ===
+[18:57:00] [Server thread/INFO]: Preparing level "ServerWorld"
+[18:57:00] [Server thread/INFO]: Preparing start region for level 0 (Seed: -1050400948367647434)
+[18:57:01] [Server thread/INFO]: Preparing spawn area: 37%
+[18:57:02] [Server thread/INFO]: Preparing spawn area: 94%
+[18:57:02] [Server thread/INFO]: Preparing start region for level 1 (Seed: -1050400948367647434)
+[18:57:03] [Server thread/INFO]: Preparing spawn area: 61%
+[18:57:04] [Server thread/INFO]: Preparing start region for level 2 (Seed: -1050400948367647434)
+[18:57:04] [Server thread/INFO]: [SetHome] Enabling SetHome v1.0.0
+[18:57:04] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1;no_git_id
+[18:57:04] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[18:57:04] [Server thread/WARN]: [WorldEdit] 
+**********************************************
+** This WorldEdit version does not fully support your version of Bukkit.
+**
+** When working with blocks or undoing, chests will be empty, signs
+** will be blank, and so on. There will be no support for entity
+** and biome-related functions.
+**
+** Please see http://wiki.sk89q.com/wiki/WorldEdit/Bukkit_adapters
+**********************************************
+
+[18:57:04] [Server thread/INFO]: [EasyWarp] Enabling EasyWarp v3.3
+[18:57:04] [Server thread/INFO]: [SetSpawn] Enabling SetSpawn v2.1
+[18:57:04] [Server thread/INFO]: [AdminTool] Enabling AdminTool v1.3.7
+[18:57:04] [Server thread/INFO]: [0;31;22m[AdminTool] [0;31;1mPlugin enabled![m
+[18:57:04] [Server thread/INFO]: [HolographicDisplays] Enabling HolographicDisplays v2.1.12
+[18:57:04] [Server thread/INFO]: [LaggRemover] Enabling LaggRemover v0.2.2
+[18:57:04] [Server thread/ERROR]: [LaggRemover] Plugin LaggRemover v0.2.2 has failed to register events for class drew6017.lr.main.LaggRemover because org/bukkit/event/entity/EntitySpawnEvent does not exist.
+[18:57:04] [Server thread/INFO]: [LaggRemover] The Smart Lag Detection AI is now active.
+[18:57:04] [Server thread/INFO]: [LaggRemover] Loaded 0 module(s)
+[18:57:04] [Server thread/INFO]: [LaggRemover] LaggRemover has been enabled!
+[18:57:04] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v6.1
+[18:57:04] [Server thread/INFO]: [WorldGuard] (ServerWorld) TNT ignition is PERMITTED.
+[18:57:04] [Server thread/INFO]: [WorldGuard] (ServerWorld) Lighters are PERMITTED.
+[18:57:04] [Server thread/INFO]: [WorldGuard] (ServerWorld) Lava fire is blocked.
+[18:57:04] [Server thread/INFO]: [WorldGuard] (ServerWorld) Fire spread is UNRESTRICTED.
+[18:57:04] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'ServerWorld'
+[18:57:04] [Server thread/INFO]: [WorldGuard] (ServerWorld_nether) TNT ignition is PERMITTED.
+[18:57:04] [Server thread/INFO]: [WorldGuard] (ServerWorld_nether) Lighters are PERMITTED.
+[18:57:04] [Server thread/INFO]: [WorldGuard] (ServerWorld_nether) Lava fire is blocked.
+[18:57:04] [Server thread/INFO]: [WorldGuard] (ServerWorld_nether) Fire spread is UNRESTRICTED.
+[18:57:04] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'ServerWorld_nether'
+[18:57:04] [Server thread/INFO]: [WorldGuard] (ServerWorld_the_end) TNT ignition is PERMITTED.
+[18:57:04] [Server thread/INFO]: [WorldGuard] (ServerWorld_the_end) Lighters are PERMITTED.
+[18:57:04] [Server thread/INFO]: [WorldGuard] (ServerWorld_the_end) Lava fire is blocked.
+[18:57:04] [Server thread/INFO]: [WorldGuard] (ServerWorld_the_end) Fire spread is UNRESTRICTED.
+[18:57:04] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'ServerWorld_the_end'
+[18:57:04] [Server thread/INFO]: [WorldGuard] Loading region data...
+[18:57:04] [Server thread/INFO]: [Factions] Enabling Factions v2.8.7Beta
+[18:57:04] [Server thread/INFO]: [0;36;22m[[0;36;1mFactions 2.8.7Beta[0;36;22m] [0;33;1m=== ENABLE START ===[m
+[18:57:05] [Server thread/INFO]: [0;36;22m[[0;36;1mFactions 2.8.7Beta[0;36;22m] [0;33;1m[0;32;1mActivated Integration [0;35;1mIntegrationWorldGuard[m
+[18:57:05] [Server thread/INFO]: [0;36;22m[[0;36;1mFactions 2.8.7Beta[0;36;22m] [0;33;1m[0;32;1mActivated Integration [0;35;1mIntegrationSpigot[m
+[18:57:05] [Server thread/INFO]: [0;36;22m[[0;36;1mFactions 2.8.7Beta[0;36;22m] [0;33;1m=== ENABLE [0;32;1mCOMPLETE [0;33;1m(Took [0;35;1m101ms[0;33;1m) ===[m
+[18:57:05] [Server thread/INFO]: [0;36;22m[[0;36;1mFactions 2.8.7Beta[0;36;22m] [0;33;1m=== ENABLE [0;32;1mCOMPLETE [0;33;1m(Took [0;35;1m102ms[0;33;1m) ===[m
+[18:57:05] [Server thread/INFO]: [ServerSigns] Enabling ServerSigns v4.5.1
+[18:57:05] [Server thread/INFO]: [ServerSigns] Version 4.5.1 is now enabled.
+[18:57:05] [Server thread/INFO]: [CustomEnchantments] Enabling CustomEnchantments v2.4c
+[18:57:05] [Server thread/INFO]: [0;32;1m[CE] WorldGuard has been detected![m
+[18:57:05] [Server thread/INFO]: [0;32;1m[CE] All Enchantments have been loaded.[m
+[18:57:05] [Server thread/INFO]: [0;32;1m[CE] All Items have been loaded.[m
+[18:57:05] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:57:05] [Server thread/INFO]: Done (5,001s)! For help, type "help" or "?"
+[18:57:05] [pool-3-thread-7/INFO]: [Vault] Checking for Updates ... 
+[18:57:05] [pool-3-thread-7/INFO]: [Vault] No new version available
+[18:57:13] [User Authenticator #1/INFO]: UUID of player righatherlaou is 2324c4dc-325d-42a9-aaaa-1ccf6a2fd1f5
+[18:57:13] [Server thread/INFO]: righatherlaou[/127.0.0.1:57692] logged in with entity id 152 at ([ServerWorld]-137.38960960191974, 78.0, 449.78954132068793)
+[18:57:20] [pool-3-thread-7/INFO]: [0;32;1m[CE] Checking for updates...[m
+[18:57:20] [pool-3-thread-7/INFO]: [0;32;1m[CE] You are using the latest Version of CE![m
+[19:21:40] [User Authenticator #2/INFO]: UUID of player xerrifxerri is 1aec0b4b-0894-4d00-a151-cc23c2281cc5
+[19:21:40] [Server thread/INFO]: xerrifxerri[/78.71.225.12:50132] logged in with entity id 9980 at ([ServerWorld]-109.38492852895553, 92.11813584628717, 475.34265811614154)
+[19:21:50] [Netty Server IO #3/INFO]: [0;31;22m[Admin] xerrifxerri[0;37;1m >> Sup bro[m
+[19:31:03] [Server thread/INFO]: xerrifxerri issued server command: /toggledownfall
+[19:31:03] [Server thread/INFO]: [xerrifxerri: Toggled downfall]
+[19:31:09] [Server thread/INFO]: xerrifxerri issued server command: /time set 0
+[19:31:09] [Server thread/INFO]: [xerrifxerri: Set the time to 0]
+[19:37:49] [Server thread/INFO]: xerrifxerri issued server command: /spawn
+[19:41:39] [Server thread/INFO]: [@: Teleported xerrifxerri to -205.5, 63.0, 481.5]
+[19:41:41] [Server thread/INFO]: [@: Teleported xerrifxerri to -173.5, 63.0, 479.5]
+[19:42:17] [Server thread/INFO]: xerrifxerri lost connection: Disconnected
+[19:42:17] [Server thread/INFO]: xerrifxerri left the game.
+[19:55:45] [User Authenticator #3/INFO]: UUID of player Valdemar_Melin is 2e5f5e39-890d-4115-95b8-2d5cb4f94ada
+[19:55:45] [Server thread/INFO]: Valdemar_Melin[/213.113.17.85:29484] logged in with entity id 40572 at ([ServerWorld]-140.7042474794399, 68.36960112544959, 471.8062435103297)
+[19:57:40] [Server thread/INFO]: righatherlaou issued server command: /speed
+[19:57:49] [Server thread/INFO]: righatherlaou issued server command: /commands
+[19:57:51] [Server thread/INFO]: righatherlaou issued server command: /command
+[19:58:01] [Server thread/INFO]: Set game difficulty to Peaceful
+[19:58:06] [Server thread/INFO]: Set game difficulty to Hard
+[19:58:08] [Server thread/INFO]: Set game difficulty to Peaceful
+[19:58:15] [Server thread/INFO]: righatherlaou lost connection: Kicked by an operator.
+[19:58:15] [Server thread/INFO]: righatherlaou left the game.
+[19:58:15] [Server thread/INFO]: Kicked righatherlaou from the game
+[19:58:15] [Server thread/WARN]: handleDisconnection() called twice
+[19:58:21] [Server thread/INFO]: com.mojang.authlib.GameProfile@1ae39be[id=<null>,name=righatherlaou,properties={},legacy=false] (/127.0.0.1:57995) lost connection: Disconnected
+[19:58:27] [Server thread/INFO]: com.mojang.authlib.GameProfile@1374bd5[id=<null>,name=righatherlaou,properties={},legacy=false] (/127.0.0.1:58007) lost connection: Disconnected
+[19:58:29] [Server thread/INFO]: com.mojang.authlib.GameProfile@4fd184[id=<null>,name=righatherlaou,properties={},legacy=false] (/127.0.0.1:58009) lost connection: Disconnected
+[19:58:44] [Server thread/INFO]: [Server] ujsage
+[19:58:47] [Server thread/INFO]: com.mojang.authlib.GameProfile@127524b[id=<null>,name=righatherlaou,properties={},legacy=false] (/127.0.0.1:58040) lost connection: Disconnected
+[19:58:50] [Server thread/INFO]: com.mojang.authlib.GameProfile@d695b2[id=<null>,name=righatherlaou,properties={},legacy=false] (/127.0.0.1:58042) lost connection: Disconnected
+[19:59:03] [Server thread/INFO]: Banned player righatherlaou
+[19:59:05] [Server thread/INFO]: com.mojang.authlib.GameProfile@34ea5d[id=<null>,name=righatherlaou,properties={},legacy=false] (/127.0.0.1:58043) lost connection: Disconnected
+[20:00:14] [Server thread/INFO]: Valdemar_Melin issued server command: //set wood
+[20:00:34] [Server thread/INFO]: Valdemar_Melin issued server command: //set wood
+[20:00:49] [Server thread/INFO]: Valdemar_Melin issued server command: //set wood
+[20:01:01] [Server thread/INFO]: Valdemar_Melin issued server command: //set water
+[20:02:12] [Server thread/INFO]: Valdemar_Melin issued server command: //set water
+[20:02:22] [Server thread/INFO]: Valdemar_Melin issued server command: //set water
+[20:02:32] [Server thread/INFO]: Valdemar_Melin issued server command: /time set day
+[20:02:32] [Server thread/INFO]: [Valdemar_Melin: Set the time to 1000]
+[20:04:03] [Server thread/INFO]: Valdemar_Melin issued server command: /undo
+[20:04:04] [Server thread/INFO]: Valdemar_Melin issued server command: /undo
+[20:04:05] [Server thread/INFO]: Valdemar_Melin issued server command: /undo
+[20:04:06] [Server thread/INFO]: Valdemar_Melin issued server command: /undo
+[20:04:07] [Server thread/INFO]: Valdemar_Melin issued server command: /undo
+[20:04:08] [Server thread/INFO]: Valdemar_Melin issued server command: /undo
+[20:04:09] [Server thread/INFO]: Valdemar_Melin issued server command: /undo
+[20:04:11] [Server thread/INFO]: Valdemar_Melin issued server command: /undo
+[20:04:20] [Server thread/INFO]: Valdemar_Melin issued server command: //set grass
+[20:04:31] [Server thread/INFO]: Valdemar_Melin issued server command: //set water
+[20:04:38] [Server thread/INFO]: Valdemar_Melin issued server command: //set water
+[20:05:05] [Server thread/INFO]: Valdemar_Melin issued server command: //set wood
+[20:05:15] [Server thread/INFO]: Valdemar_Melin issued server command: //set grass
+[20:05:31] [Server thread/INFO]: Valdemar_Melin issued server command: //set wood
+[20:06:05] [Server thread/INFO]: Valdemar_Melin issued server command: //set wood
+[20:06:13] [Server thread/INFO]: Valdemar_Melin issued server command: //set wood
+[20:06:43] [Server thread/INFO]: Valdemar_Melin issued server command: //set wood
+[20:06:48] [Server thread/INFO]: Valdemar_Melin issued server command: //set stone
+[20:06:53] [Server thread/INFO]: Valdemar_Melin issued server command: //set cobble
+[20:07:02] [Server thread/INFO]: Valdemar_Melin issued server command: //set cobble
+[20:07:59] [Server thread/INFO]: Valdemar_Melin issued server command: //set air
+[20:08:05] [Server thread/INFO]: Valdemar_Melin issued server command: //set air
+[20:08:34] [Server thread/INFO]: Valdemar_Melin issued server command: //set cobble
+[20:08:39] [Server thread/INFO]: Valdemar_Melin issued server command: //set cobble
+[20:08:48] [Server thread/INFO]: Valdemar_Melin issued server command: //set cobble
+[20:08:54] [Server thread/INFO]: Valdemar_Melin issued server command: //set cobble
+[20:17:22] [Server thread/INFO]: Valdemar_Melin lost connection: Disconnected
+[20:17:22] [Server thread/INFO]: Valdemar_Melin left the game.
+[20:46:50] [Server thread/INFO]: Stopping the server
+[20:46:50] [Server thread/INFO]: Stopping server
+[20:46:50] [Server thread/INFO]: [CustomEnchantments] Disabling CustomEnchantments v2.4c
+[20:46:50] [Server thread/INFO]: [ServerSigns] Disabling ServerSigns v4.5.1
+[20:46:50] [Server thread/INFO]: [ServerSigns] ServerSigns is now disabled.
+[20:46:50] [Server thread/INFO]: [Factions] Disabling Factions v2.8.7Beta
+[20:46:50] [Server thread/INFO]: [0;36;22m[[0;36;1mFactions 2.8.7Beta[0;36;22m] [0;33;1m[0;31;1mDeactivated Integration [0;35;1mIntegrationWorldGuard[m
+[20:46:50] [Server thread/INFO]: [0;36;22m[[0;36;1mFactions 2.8.7Beta[0;36;22m] [0;33;1m[0;31;1mDeactivated Integration [0;35;1mIntegrationSpigot[m
+[20:46:50] [Server thread/INFO]: [0;36;22m[[0;36;1mFactions 2.8.7Beta[0;36;22m] [0;33;1mDisabled[m
+[20:46:50] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v6.1
+[20:46:50] [Server thread/INFO]: [WorldGuard] Shutting down executor and waiting for any pending tasks...
+[20:46:50] [Server thread/INFO]: [MassiveCore] Disabling MassiveCore v2.8.7Beta
+[20:46:50] [Server thread/INFO]: [0;36;22m[[0;36;1mMassiveCore 2.8.7Beta[0;36;22m] [0;33;1m[0;31;1mDeactivated Integration [0;35;1mIntegrationVault[m
+[20:46:50] [Server thread/INFO]: [0;36;22m[[0;36;1mMassiveCore 2.8.7Beta[0;36;22m] [0;33;1mDisabled[m
+[20:46:50] [Server thread/INFO]: [LaggRemover] Disabling LaggRemover v0.2.2
+[20:46:50] [Server thread/INFO]: [LaggRemover] LaggRemover has been disabled!
+[20:46:50] [Server thread/INFO]: [Vault] Disabling Vault v1.5.6-b49
+[20:46:50] [Server thread/INFO]: [HolographicDisplays] Disabling HolographicDisplays v2.1.12
+[20:46:50] [Server thread/INFO]: [AdminTool] Disabling AdminTool v1.3.7
+[20:46:50] [Server thread/INFO]: [0;31;22m[AdminTool] [0;31;1mPlugin disabled![m
+[20:46:50] [Server thread/INFO]: [SetSpawn] Disabling SetSpawn v2.1
+[20:46:50] [Server thread/INFO]: [EasyWarp] Disabling EasyWarp v3.3
+[20:46:50] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v6.1;no_git_id
+[20:46:50] [Server thread/INFO]: [SetHome] Disabling SetHome v1.0.0
+[20:46:50] [Server thread/INFO]: Saving players
+[20:46:50] [Server thread/INFO]: Saving worlds
+[20:46:50] [Server thread/INFO]: Saving chunks for level 'ServerWorld'/Overworld
+[20:46:50] [Server thread/INFO]: Saving chunks for level 'ServerWorld_nether'/Nether
+[20:46:50] [Server thread/INFO]: Saving chunks for level 'ServerWorld_the_end'/The End

@@ -1,0 +1,8 @@
+welcome:
+  location: ServerWorld, -128.566, 68.200, 441.676
+  lines:
+  - Welcome to the server!
+wearethebest:
+  location: ServerWorld, -128.427, 72.200, 435.418
+  lines:
+  - We are the best!! >:D >:D

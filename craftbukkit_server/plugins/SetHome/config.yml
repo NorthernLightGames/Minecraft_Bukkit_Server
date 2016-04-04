@@ -1,0 +1,20 @@
+prefix: '&7[&6SetHome&7]'
+delay-to-teleport: 3
+no-permission-message: '&4Sorry but you are not allowed to use this command!'
+message-when-moved-while-teleport: '&4Sorry but you moved during the teleport!'
+message-when-already-typed-home: '&4Sorry but you have already typed /home!'
+message-when-executes-home-but-no-home-has-been-set: '&4Sorry but you haven''t set
+  your home yet! Type /sethome to set your home!'
+message-when-executes-home: '&7You will be teleorted in 3 seconds. Do not move until
+  you have been teleported!'
+message-when-player-teleported-to-home: '&aYou are back at your home.'
+message-when-player-set-home: '&aYou have set your home. Type /home to get back to
+  your home'
+message-when-too-much-arguments-at-command: '&4Too much arguments!'
+2324c4dc-325d-42a9-aaaa-1ccf6a2fd1f5:
+  world: ServerWorld
+  x: -118.14517710786463
+  y: 64.0
+  z: 428.63725466462364
+  yaw: 34.40142822265625
+  pitch: 6.8999433517456055
