@@ -38,7 +38,7 @@ hi_criteria:
 loops: -1
 loop_delay: 1
 uses_limit: 0
-uses_tally: 10
+uses_tally: 22
 protectedBlocks:
 - ServerWorld,77,76,125
 displayInternalMessages: true

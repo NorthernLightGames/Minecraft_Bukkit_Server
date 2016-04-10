@@ -3,9 +3,9 @@ permissionMessage: ''
 cancelPermission: ''
 cancelPermissionMessage: ''
 world: ServerWorld
-X: -129
-Y: 68
-Z: 436
+X: -125
+Y: 67
+Z: 443
 price: 0.0
 exp: 0
 cooldown: 0
@@ -16,7 +16,7 @@ confirmationMessage: ''
 cancel_mode: ALWAYS
 commands:
   '0':
-    command: /tp 1047 78 111069
+    command: /warp parkour
     type: PLAYER_COMMAND
     delay: 0
     grantPerms: []
@@ -38,9 +38,9 @@ hi_criteria:
 loops: -1
 loop_delay: 1
 uses_limit: 0
-uses_tally: 2
+uses_tally: 1
 protectedBlocks:
-- ServerWorld,-129,68,435
+- ServerWorld,-125,66,443
 displayInternalMessages: true
 timeLimitMaximum: 0
 timeLimitMinimum: 0

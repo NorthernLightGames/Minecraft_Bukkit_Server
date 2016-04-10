@@ -13,8 +13,8 @@ message-when-player-set-home: '&aYou have set your home. Type /home to get back 
 message-when-too-much-arguments-at-command: '&4Too much arguments!'
 2324c4dc-325d-42a9-aaaa-1ccf6a2fd1f5:
   world: ServerWorld
-  x: -118.14517710786463
-  y: 64.0
-  z: 428.63725466462364
-  yaw: 34.40142822265625
-  pitch: 6.8999433517456055
+  x: -465.6532986328369
+  y: 2.0
+  z: 627.0520694146583
+  yaw: 230.6156005859375
+  pitch: 24.59995460510254

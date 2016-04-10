@@ -42,3 +42,11 @@ regions:
         owners: {}
         type: cuboid
         priority: 0
+    parkour:
+        min: {x: -502.0, y: 0.0, z: 607.0}
+        max: {x: -432.0, y: 35.0, z: 664.0}
+        members: {}
+        flags: {}
+        owners: {}
+        type: cuboid
+        priority: 0

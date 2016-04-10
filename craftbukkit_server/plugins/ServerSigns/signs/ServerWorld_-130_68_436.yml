@@ -16,7 +16,7 @@ confirmationMessage: ''
 cancel_mode: ALWAYS
 commands:
   '0':
-    command: /tp 210 115 279
+    command: /warp tp2
     type: PLAYER_COMMAND
     delay: 0
     grantPerms: []

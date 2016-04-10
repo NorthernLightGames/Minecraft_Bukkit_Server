@@ -55,7 +55,7 @@ broadcast_developers: true
 check_for_updates: true
 
 # Whether command logging to the console should be disabled
-disable_command_logging: false
+disable_command_logging: true
 
 # Whether the plugin should listen for left clicks as well as right clicks for ServerSign activation
 # This option must be enabled to allow ServerSigns to execute different commands for left & right clicks

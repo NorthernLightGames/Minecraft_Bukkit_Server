@@ -16,7 +16,7 @@ confirmationMessage: ''
 cancel_mode: ALWAYS
 commands:
   '0':
-    command: /tp 77 77 123
+    command: /tp 78 77 123
     type: PLAYER_COMMAND
     delay: 0
     grantPerms: []
@@ -38,9 +38,9 @@ hi_criteria:
 loops: -1
 loop_delay: 1
 uses_limit: 0
-uses_tally: 7
+uses_tally: 4
 protectedBlocks:
 - ServerWorld,-131,68,435
-displayInternalMessages: true
+displayInternalMessages: false
 timeLimitMaximum: 0
 timeLimitMinimum: 0
